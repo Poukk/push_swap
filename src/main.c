@@ -1,6 +1,7 @@
-#include <stdio.h>
+#include "push_swap.h"
 
-int main(void) {
-    printf("Hello, World!\n");
-    return 0;
+int	main(int argc, char *argv[])
+{
+	(void) argv;
+	ft_printf("Argc: %i\n", argc);
 }

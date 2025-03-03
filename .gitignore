@@ -1,3 +1,5 @@
 bin/
 obj/
 *.o
+.cache
+en.subject.pdf
