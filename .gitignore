@@ -3,3 +3,4 @@ obj/
 *.o
 .cache
 en.subject.pdf
+compile_commands.json
