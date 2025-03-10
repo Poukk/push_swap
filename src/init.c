@@ -10,6 +10,7 @@ t_stack_node	*create_node(int content)
 	new_node->content = content;
 	new_node->next = NULL;
 	new_node->prev = NULL;
+	new_node->cheapest = 0;
 	return (new_node);
 }
 

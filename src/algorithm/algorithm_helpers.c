@@ -55,7 +55,7 @@ void	set_cost(t_stack_node *a, t_stack_node *b)
 		if (!(a->above_median))
 			a->push_cost = len_a - (a->index);
 		if (a->target_node->above_median)
-			a->push_cost = a->target_node->index;
+			a->push_cost += a->target_node->index;
 		else
 			a->push_cost += len_b - (a->target_node->index);
 		a = a->next;
