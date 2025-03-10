@@ -9,7 +9,7 @@ void	set_index(t_stack_node *stack)
 		return ;
 	i = 0;
 	median = get_len(stack) / 2;
-	while(stack)
+	while (stack)
 	{
 		stack->index = i;
 		if (i <= median)
@@ -25,7 +25,7 @@ void	set_index(t_stack_node *stack)
 void	set_cheapest(t_stack_node *stack)
 {
 	t_stack_node	*cheapest_node;
-	int	cheapest_value;
+	int				cheapest_value;
 
 	if (!stack)
 		return ;
@@ -37,7 +37,7 @@ void	set_cheapest(t_stack_node *stack)
 			cheapest_value = stack->push_cost;
 			cheapest_node = stack;
 		}
-		stack = stack->next; 
+		stack = stack->next;
 	}
 	cheapest_node->cheapest = 1;
 }
@@ -62,24 +62,23 @@ void	set_cost(t_stack_node *a, t_stack_node *b)
 	}
 }
 
-void	node_to_top(t_stack_node **stack, t_stack_node *top_node, char stack_name)
+void	node_to_top(t_stack_node **stack, t_stack_node *top_node, char s_name)
 {
 	while (*stack != top_node)
 	{
-		if (stack_name == 'a')
+		if (s_name == 'a')
 		{
 			if (top_node->above_median)
 				ra(stack, 1);
 			else
 				rra(stack, 1);
 		}
-		if (stack_name == 'b')
+		if (s_name == 'b')
 		{
 			if (top_node->above_median)
 				rb(stack, 1);
 			else
 				rrb(stack, 1);
-
 		}
 	}
 }

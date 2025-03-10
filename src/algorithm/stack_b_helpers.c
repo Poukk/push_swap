@@ -4,7 +4,7 @@ void	set_target_b(t_stack_node *a, t_stack_node *b)
 {
 	t_stack_node	*temp;
 	t_stack_node	*target_node;
-	int		target_index;
+	int				target_index;
 
 	while (b)
 	{
@@ -37,5 +37,5 @@ void	update_stack_b(t_stack_node *a, t_stack_node *b)
 void	move_b_to_a(t_stack_node **a, t_stack_node **b)
 {
 	node_to_top(a, (*b)->target_node, 'a');
-	pa(a, b, 1); 
+	pa(a, b, 1);
 }

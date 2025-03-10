@@ -4,7 +4,7 @@ void	set_target_a(t_stack_node *a, t_stack_node *b)
 {
 	t_stack_node	*temp;
 	t_stack_node	*target_node;
-	int		target_index;
+	int				target_index;
 
 	while (a)
 	{
@@ -40,11 +40,11 @@ void	move_a_to_b(t_stack_node **a, t_stack_node **b)
 {
 	t_stack_node	*cheapest_node;
 
-	cheapest_node = get_cheapest(*a); 
-	if (cheapest_node->above_median 
+	cheapest_node = get_cheapest(*a);
+	if (cheapest_node->above_median
 		&& cheapest_node->target_node->above_median)
 		bring_to_bottom(a, b, cheapest_node);
-	else if (!(cheapest_node->above_median) 
+	else if (!(cheapest_node->above_median)
 		&& !(cheapest_node->target_node->above_median))
 		bring_to_top(a, b, cheapest_node);
 	node_to_top(a, cheapest_node, 'a');

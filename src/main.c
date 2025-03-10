@@ -1,17 +1,5 @@
 #include "push_swap.h"
 
-void	print_stack(t_stack_node **stack)
-{
-	t_stack_node	*temp;
-
-	temp = *stack;
-	while(temp)
-	{
-		ft_printf("%i\n", temp->content);
-		temp = temp->next;
-	}
-}
-
 int	main(int argc, char *argv[])
 {
 	t_stack_node	*a;

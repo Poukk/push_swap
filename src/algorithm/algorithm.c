@@ -63,5 +63,3 @@ void	sort_stacks(t_stack_node **a, t_stack_node **b)
 	set_index(*a);
 	min_to_top(a);
 }
-
-
