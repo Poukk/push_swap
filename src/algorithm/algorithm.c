@@ -11,7 +11,7 @@ void	bring_to_bottom(t_stack_node **a, t_stack_node **b, t_stack_node *node)
 void	bring_to_top(t_stack_node **a, t_stack_node **b, t_stack_node *node)
 {
 	while (*a != node && *b != node->target_node)
-		rr(a, b, 1);
+		rrr(a, b, 1);
 	set_index(*a);
 	set_index(*b);
 }

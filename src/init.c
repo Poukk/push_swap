@@ -56,9 +56,9 @@ void	populate_stack(t_stack_node **stack, char **list)
 		return ;
 	while (*list)
 	{
-		number = ft_atol(*list);
-		if (!number)
+		if (!is_valid_integer(*list))
 			free_error(stack);
+		number = ft_atol(*list);
 		if (is_duplicated(stack, number))
 			free_error(stack);
 		if (number > INT_MAX || number < INT_MIN)

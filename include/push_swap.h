@@ -66,4 +66,5 @@ void	update_stack_b(t_stack_node *a, t_stack_node *b);
 void	move_b_to_a(t_stack_node **a, t_stack_node **b);
 void	sort_three(t_stack_node **a);
 void	sort_stacks(t_stack_node **a, t_stack_node **b);
+int	is_valid_integer(const char *str);
 #endif
