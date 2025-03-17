@@ -32,7 +32,7 @@ void	free_stack(t_stack_node **stack)
 void	free_error(t_stack_node **stack)
 {
 	free_stack(stack);
-	ft_printf("Error\n");
+	ft_putstr_fd("Error\n", 2);
 	exit(EXIT_FAILURE);
 }
 
