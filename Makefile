@@ -66,7 +66,4 @@ fclean:
 
 re: fclean all
 
-tests: all
-	@./tests.sh
-
 .PHONY: all clean fclean re
